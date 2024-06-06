@@ -16,20 +16,20 @@ Bu projeyi çalıştırmak için aşağıdaki yazılımlara ihtiyacınız vardı
    
 Git kullanarak projeyi klonlayabilirsiniz: 
 
-	git clone https://github.com/kullaniciadi/duygu-tahmini-projesi.git
-	cd duygu-tahmini-projesi
+	git clone https://github.com/emresallioglu/Duygu-Tahmini
+	cd Duygu-Tahmini
 
 Alternatif olarak, proje dosyalarını doğrudan indirebilir ve bir klasöre çıkartabilirsiniz.
 
 
 2. **Sanal ortam oluşturun ve etkinleştirin**:
 
-Windows:
-	python -m venv venv
-	venv\Scripts\activate
-MacOS/Linux:
-	python3 -m venv venv
-	source venv/bin/activate
+    Windows:
+	    python -m venv venv
+	    venv\Scripts\activate
+    MacOS/Linux:
+	    python3 -m venv venv
+	    source venv/bin/activate
 
 
 3. **Gereksinimleri yükleyin**:
