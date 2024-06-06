@@ -66,13 +66,13 @@ for doc in root.findall('Doc'):
 
     # Orijinal duyguyu çevir
     original_emotion_translated = emotion_translation.get(original_emotion, default_emotion)
-    if original_emotion_translated == default_emotion:
-        print(f'Uyarı: Bilinmeyen orijinal duygu etiketi "{original_emotion}" bulundu.')
+    #if original_emotion_translated == default_emotion:
+     #   print(f'Uyarı: Bilinmeyen orijinal duygu etiketi "{original_emotion}" bulundu.')
 
     # Doğrulanmış duyguyu çevir
     validated_emotion_translated = emotion_translation.get(validated_emotion, default_emotion)
-    if validated_emotion_translated == default_emotion:
-        print(f'Uyarı: Bilinmeyen doğrulanmış duygu etiketi "{validated_emotion}" bulundu.')
+    #if validated_emotion_translated == default_emotion:
+    #    print(f'Uyarı: Bilinmeyen doğrulanmış duygu etiketi "{validated_emotion}" bulundu.')
 
     entries.append(entry)
     original_emotions.append(original_emotion_translated)
