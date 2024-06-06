@@ -16,7 +16,7 @@ Bu projeyi çalıştırmak için aşağıdaki yazılımlara ihtiyacınız vardı
    
 Git kullanarak projeyi klonlayabilirsiniz: 
 
-	git clone https://github.com/emresallioglu/Duygu-Tahmini
+	git clone https://github.com/emresallioglu/Duygu-Tahmini.git
 	cd Duygu-Tahmini
 
 Alternatif olarak, proje dosyalarını doğrudan indirebilir ve bir klasöre çıkartabilirsiniz.
