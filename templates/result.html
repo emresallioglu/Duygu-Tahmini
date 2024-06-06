@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tahmin Sonucu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .result-header {
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Tahmin Sonucu</h1>
+            </div>
+            <div class="card-body">
+                <p class="result-header"><strong>Cümle:</strong> {{ cumle }}</p>
+                <h2>Duygu Tahminleri:</h2>
+                <ul class="list-group">
+                    {% for duygu, olasilik in tahminler %}
+                        <li class="list-group-item">
+                            <span>{{ duygu }}</span>
+                            <span>{{ "%.2f" | format(olasilik * 100) }}%</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <a href="/" class="btn btn-custom mt-3">Geri Dön</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

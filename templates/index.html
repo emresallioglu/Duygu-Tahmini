@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duygu Tahmini</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Duygu Tahmini</h1>
+            </div>
+            <div class="card-body">
+                <form action="/tahmin" method="post">
+                    <div class="form-group">
+                        <label for="cumle">Cümle:</label>
+                        <input type="text" id="cumle" name="cumle" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-custom">Tahmin Et</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
